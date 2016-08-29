@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="description" content="The best, Cheesecake, recipe, delicious, PB&J, cake, cheese">
+    <title>Cheesecake Recipe</title>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-12345678-9', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="external_javascript_example.js"/></script>
+    <!-- <link rel="stylesheet" href="css_reset.css" type="text/css"> -->
+    <link rel="stylesheet" href="css_custom_reset.css" type="text/css">
+    <link rel="stylesheet" href="receipe.css" type="text/css"/>
+    <link rel="stylesheet" href="custom_grid.css" type="text/css">
+  </head>
+  <body>
+
+    <header class="group">
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1B0VrQP9CVA3XHMpiTIMmdtG_t38PKn4jXv7r-9za2ma9-vbvjfBwnQ"/>
+      <nav>
+        <ul>
+        <li><a href="#Description">Description</a></li>
+        <li><a href="#Ingredients">Ingredients</a></li>
+        <li><a href="#Directions">Directions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="col col-180-900">
+      <aside>
+        <h2>Ingredients</h2>
+        <a name="Ingredients"/>
+        <ul class="ingredients-list">
+          <h4>Crust:</h4>
+          <li>2 cups ground Cinnamon Toast Crunch™ Cereal </li>
+          <li>2 tablespoons sugar</li>
+          <li>1/4 teaspoon salt</li>
+          <li>5 tablespoons unsalted butter, melted</li>
+          <h4>Filling:</h4>
+          <li>16 oz. cream cheese, softened</li>
+          <li>1/2 cup sugar</li>
+          <li>4 large eggs</li>
+          <li>3/4 cup creamy peanut butter </li>
+          <li>1/2 cup sour cream</li>
+          <li>1/2 cup heavy cream</li>
+          <h4>Garnish:</h4>
+          <li>Chopped Peanuts</li>
+          <li>1/3 cup grape jelly, warm to drizzle</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="col col-700-900">
+      <section>
+        <h1>PB&J Chesse Cake</h1>
+
+        <figure>
+          <img src="http://images-gmi-pmc.edge-generalmills.com/89dc0cf1-9f20-43a2-bcd5-dc7cfabbfdab.jpg"/>
+        </figure>
+        <figcaption>
+          Doesn't that just look delicious!
+          <a href="https://en.wikipedia.org/wiki/Cheesecake">Cheese Cake Wiki</a>
+        </figcaption>
+
+        <h2>Description</h2>
+        <a name="Description"/>
+        <p>
+          Creamy and delicious cheesecake baked with traditional PB&J flavors in a
+          Cinnamon Toast Crunch crust!
+        </p>
+
+        <h2>Directions</h2>
+        <a name="Directions"/>
+        <ol>
+          <li>
+            Preheat oven to 350ºF. In a medium bowl, mix together ground cereal,
+            sugar, salt, and melted butter. Press the mixture into the bottom and
+            sides of a 9-inch springform pan or an 11-inch fluted tart pan. Bake the
+            crust for 10 minutes.
+          </li>
+          <li>
+             In a medium bowl, beat together cream cheese and sugar until the
+             mixture is smooth. Then add in eggs, one at a time, followed by peanut
+             butter, sour cream and heavy cream. Mix well to combine.
+          </li>
+          <li>
+             Pour filling into baked crust. Turn oven down to 325ºF and bake
+             cheesecake for 50-70 minutes until the filling is just set. If you use
+             a wider pan (like an 11-inch tart pan) the cheesecake will be less deep
+             and need less baking time. A taller cheesecake will need over an hour
+             to set completely.
+           </li>
+          <li>
+            Remove cheesecake from oven and let cool for 15 minutes. Then remove
+            it from the pan carefully.
+          </li>
+          <li>
+            Warm up grape jelly in the microwave until it’s thin enough to pour.
+            Drizzle cheesecake with jelly and garnish with chopped peanuts. Slice
+            and serve!
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <section id="reviews">
+      <form action="/reviews" method="post" id="review_form">
+        <label for="reviewer_name">Reviewer's Name</label><br>
+        <input type="text" name = "recipe[reviewer]" id="reviewer_name">
+        <br>
+
+        <label for="rating">1</label>
+          <input type="radio" name="recipe[rating]" id="rating" value="1" checked>
+        <label for="rating">2</label>
+          <input type="radio" name="recipe[rating]" id="rating" value="2">
+        <label for="rating">3</label>
+          <input type="radio" name="recipe[rating]" id="rating" value="3">
+        <label for="rating">4</label>
+          <input type="radio" name="recipe[rating]" id="rating" value="4">
+        <label for="rating">5</label>
+          <input type="radio" name="recipe[rating]" id="rating" value="5">
+        <br>
+
+        <label for="cooking_expertise"></label>
+          <select name="recipe[expertice]" id="cooking_expertise">
+            <option value="select">Select Cooking Expertise</option>
+            <option value="sometimes">Sometimes Cook</option>
+            <option value="everyday">Cook Everyday</option>
+            <option value="hobby">Cooking is a Hobby</option>
+            <option value="profesional">Professional Chef</option>
+          </select>
+        <br>
+
+        <label>Review<br><textarea name="recipe[review]"></textarea></label>
+        <br>
+
+        <input type="submit" value="Submit">
+    </section>
+
+    <footer>
+      <p>Original recipe from<a href="http://www.bettycrocker.com/recipes/pbj-cheesecake/12597f35-dd16-4266-9479-99cad45dd20e"> Betty Crocker</a></p>
+    </footer>
+
+  </body>
+</html>

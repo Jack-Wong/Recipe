@@ -1,0 +1,108 @@
+body {
+  font-family: Arial,sans-serif;
+  background-color: rgb(215, 219, 224);
+}
+
+H1 {
+  font-size: 38px;
+}
+
+H2 {
+  font-size: 32px;
+}
+
+.ingredients-list {
+  list-style: square inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header > img {
+  float: left;
+  width: 100px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user_review h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input:last-child {
+  background: gold;
+}
+
+input:last-child:hover {
+  -webkit-filter: brightness(90%);
+}
+
+ol li:nth-of-type(2n) {
+  background-color: lightgrey;
+}
+
+h2 + .user_review {
+  border-top: 1px solid black;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url(stars.png);
+  vertical-align: bottom;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;;
+  padding: 20px;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul li {
+  margin: 15px 0 15px 0;
+}
+
+ol li {
+  margin: 15px 0 15px 0;
+}
+
+input {
+  display: inline-block;
+}
+
+form {
+  display: inline-block;
+}
+
+select {
+  width: 200px;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}

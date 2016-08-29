@@ -1,0 +1,21 @@
+/*Grid*/
+
+.col {
+  float: left;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.col-180-900 {
+  width: 23%;
+}
+
+.col-700-900 {
+  width: 77%;
+}
+
+@media all (max-width: 900px) {
+  col {
+    width: 100%;
+  }
+}
